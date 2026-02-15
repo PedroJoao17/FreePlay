@@ -8,6 +8,16 @@ export const styles = StyleSheet.create({
         borderBottomWidth: StyleSheet.hairlineWidth,
         borderBottomColor: colors.border,
     },
+    headerAction: {
+        width: 40,
+        height: 40,
+        borderRadius: 12,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "rgba(17, 27, 44, 0.6)",
+        borderWidth: StyleSheet.hairlineWidth,
+        borderColor: colors.border,
+    },
     brandRow: {
         flexDirection: "row",
         alignItems: "center",

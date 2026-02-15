@@ -17,6 +17,8 @@ export default function TabLayout() {
         <Tabs.Screen name="playlists" options={{ title: "Lista de Reprodução" }} />
         <Tabs.Screen name="tracks" options={{ title: "Faixas" }} />
         <Tabs.Screen name="albums" options={{ title: "Álbuns" }} />
+        <Tabs.Screen name="settings" options={{ title: "Configurações", href: null }} />
+        
       </Tabs>
     </View>
   );
