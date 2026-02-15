@@ -1,1 +1,1 @@
-export { default } from "@/features/TracksScreen/TracksScreen";
+export { default } from "@/features/library/screens/TracksScreen/TracksScreen";
