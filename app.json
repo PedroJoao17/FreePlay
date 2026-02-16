@@ -2,21 +2,13 @@
   "expo": {
     "name": "FreePlay",
     "slug": "FreePlay",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon-free-play.png",
     "scheme": "freeplay",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/splash-icon-free-play.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0A1220"
-    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.freeplay"
     },
     "android": {
+      "package": "com.anonymous.freeplay",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon-free-play.png",
         "monochromeImage": "./assets/images/monochrome-icon.png",
@@ -25,15 +17,18 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon-icon-free-play.png"
-    },
     "plugins": [
       "expo-router",
       "expo-audio",
-      "expo-sqlite"
+      "expo-sqlite",
+      [
+        "expo-media-library",
+        {
+          "granularPermissions": [
+            "audio"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

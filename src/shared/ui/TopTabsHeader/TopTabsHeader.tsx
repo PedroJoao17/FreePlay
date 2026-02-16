@@ -26,7 +26,7 @@ export function TopTabsHeader() {
         <View style={[styles.headerWrap, { paddingTop: insets.top + 10 }]}>
             <View style={styles.brandRow}>
                 <Image
-                    source={require("../../../../assets/images/adaptive-icon.png")}
+                    source={require("../../../../assets/images/adaptive-icon-free-play.png")}
                     style={styles.brandIcon}
                 />
 
